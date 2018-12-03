@@ -5,7 +5,7 @@ class FaceapiAdapter
     {
     api_key: '3qigSUuZzHp3k05QQU7iJz5am_5OjPcN',
     api_secret: 'nWjgstEB1NRh6aRdr3O9CKgq2VFNwpWb',
-    image_url: "https://i.pinimg.com/736x/8f/03/45/8f0345b062dd00c0e9e20168b50d319c.jpg"
+    image_base64: bodyData
     }
       )
     json_response = JSON.parse(response.body)
