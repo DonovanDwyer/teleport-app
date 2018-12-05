@@ -4,7 +4,7 @@ class FinalImagesController < ApplicationController
 
   def index
     @final_images = FinalImage.all
-    render json: @final_images
+    render json: @final_images.reverse
   end
 
   def show
