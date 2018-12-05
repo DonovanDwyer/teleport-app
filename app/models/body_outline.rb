@@ -1,0 +1,2 @@
+class BodyOutline < ApplicationRecord
+end

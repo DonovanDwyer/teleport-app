@@ -10,9 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_01_163935) do
+ActiveRecord::Schema.define(version: 2018_12_04_221632) do
 
-  create_table "screenshots", force: :cascade do |t|
+  create_table "background_images", force: :cascade do |t|
+    t.text "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "body_outlines", force: :cascade do |t|
+    t.text "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "final_images", force: :cascade do |t|
     t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

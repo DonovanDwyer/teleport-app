@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
-  resources :screenshots, only: [:create]
+  resources :body_outlines, only: [:create]
+  resources :background_images, only: [:create, :destroy, :show, :index]
+  resources :final_images, only: [:create, :destroy, :show, :index]
 
 end
